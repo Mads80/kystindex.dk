@@ -176,14 +176,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     </head>
     <body>
         <div class="header-container">
-            <img src="logo.png?v=04-11-2026 kl. 23:46" alt="Kystindex.dk" class="logo">
+            <img src="logo.png?v=05-11-2026 kl. 00:01" alt="Kystindex.dk" class="logo">
         </div>
         
         <!-- Fynske kyst- og vejrforhold titel lagt ind her oppe -->
         <div class="timestamp-top">
             <h1>kystindex.dk</h1>
             <h2>Fynske kyst- og vejrforhold</h2>
-            <div class="update-time">Seneste opdatering: 04-11-2026 kl. 23:46</div>
+            <div class="update-time">Seneste opdatering: 05-11-2026 kl. 00:01</div>
         </div>
 
         <!-- Om side / hurtig oversigts-boks -->
@@ -235,15 +235,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
             <h2>Nyborg Knudshoved og Slipshavn (Østfyn)</h2>
             <div class="coords">📍 55.297° N, 10.853° E</div>
             <div class="info-list">
-                <p><strong>Vind:</strong> 0.32 m/s (stød 0.69 m/s) fra SV</p>
-                <p><strong>Vandstand:</strong> 0.0 cm <span class="trend">(↓ Faldende)</span></p>
+                <p><strong>Vind:</strong> 0.07 m/s (stød 0.51 m/s) fra S</p>
+                <p><strong>Vandstand:</strong> -2.0 cm <span class="trend">(↓ Faldende)</span></p>
                 <p><strong>Vandtemp:</strong> 10.6 °C</p>
             </div>
             <div class="chart-container">
                 <canvas id="waterChart1"></canvas>
             </div>
             <p class="status"><strong>Status:</strong> 🔥 OPTIMAL (Læ / Sidevind)</p>
-            <p class="note">Vind fra SV (0.32 m/s) giver fine, rolige kasteforhold. Vandstanden er +0.0 cm og **faldende**. Fisken kan søge med ud mod rev og dybere kanten, så affisk skrænterne grundigt.</p>
+            <p class="note">Vind fra S (0.07 m/s) giver fine, rolige kasteforhold. Vandstanden er -2.0 cm og **faldende**. Fisken kan søge med ud mod rev og dybere kanten, så affisk skrænterne grundigt.</p>
         </div>
         
         <div id="spot-2" class="card optimal">
@@ -252,7 +252,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
             <div class="info-list">
                 <p><strong>Vind:</strong> 1.54 m/s (stød 1.54 m/s) fra SV</p>
                 <p><strong>Vandstand:</strong> -6.0 cm <span class="trend">(↓ Faldende)</span></p>
-                <p><strong>Vandtemp:</strong> 12.0 °C</p>
+                <p><strong>Vandtemp:</strong> 12.1 °C</p>
             </div>
             <div class="chart-container">
                 <canvas id="waterChart2"></canvas>
@@ -265,9 +265,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
             <h2>Helnæs Fyr og Torø (Sydvestfyn)</h2>
             <div class="coords">📍 55.142° N, 9.998° E</div>
             <div class="info-list">
-                <p><strong>Vind:</strong> 0.0 m/s (stød 0.58 m/s) fra N</p>
+                <p><strong>Vind:</strong> 0.0 m/s (stød 0.3 m/s) fra N</p>
                 <p><strong>Vandstand:</strong> 18.0 cm <span class="trend">(↑ Stigende)</span></p>
-                <p><strong>Vandtemp:</strong> 12.0 °C</p>
+                <p><strong>Vandtemp:</strong> 12.1 °C</p>
             </div>
             <div class="chart-container">
                 <canvas id="waterChart3"></canvas>
@@ -334,9 +334,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
         new Chart(ctx1, {
             type: 'line',
             data: {
-                labels: ["21:00", "21:10", "21:20", "21:30", "21:40", "21:50", "22:00", "22:10", "22:20", "22:30", "22:40", "22:50", "23:00", "23:10", "23:20", "23:30", "23:40"],
+                labels: ["21:10", "21:20", "21:30", "21:40", "21:50", "22:00", "22:10", "22:20", "22:30", "22:40", "22:50", "23:00", "23:10", "23:20", "23:30", "23:40", "23:50"],
                 datasets: [{
-                    data: [17.0, 17.0, 17.0, 17.0, 16.0, 15.0, 14.0, 14.0, 13.0, 12.0, 11.0, 10.0, 8.0, 6.0, 5.0, 3.0, 0.0],
+                    data: [17.0, 17.0, 17.0, 16.0, 15.0, 14.0, 14.0, 13.0, 12.0, 11.0, 10.0, 8.0, 6.0, 5.0, 3.0, 0.0, -2.0],
                     borderColor: '#38bdf8',
                     borderWidth: 2,
                     pointRadius: 0,
